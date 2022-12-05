@@ -44,54 +44,120 @@ body{
     
 }
 .aboutme{
-    font-size: 280%;
-    text-align: center;
-    text-decoration: dotted;
+    height: 500px;
+    width: 700px;
+    margin-left: 20rem;
+    font-size: 200%;
+    text-align: verticle;
+    text-overflow: none;
 }
+.aboutme h1{
+    position: relative;
+    left: -275px;
+}
+.aboutme p{
+    position: relative;
+    left: -275px;
+}
+.wip{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  
 
-div{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 20rem);
-    justify-content: center;
-    padding: 10px;
-    margin: 10px;
-    margin-bottom: 20px;
 }
 .card{
-    height: 350px;
-    width: 250px;
-    margin: 0.5rem;
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    border-radius: 6px
-    
-  
+    color: white;
+    background-image: url(images/Victory-shop-shot-.jpg);
+    background-size: cover;
+    padding: 11rem 0 0;
+    max-width: 35ch;
+    border-radius: 1rem ;
+    overflow: hidden;
+
+    transition: transform 500ms ease;
+}
+.card:hover{
+    transform: scale(1.05);
 }
 
-.card h3{
+.card2{
     color: white;
-    text-align: center;
-    font-size: 25px;
-    display: none;
-   
-   
+    background-image: url(images/DRone-law-1.jpg);
+    background-size: cover;
+    padding: 11rem 0 0;
+    max-width: 35ch;
+    border-radius: 1rem ;
+    overflow: hidden;
+
+    transition: transform 500ms ease;
 }
-.card p{
+.card2:hover{
+    transform: scale(1.05);
+}
+.card3{
     color: white;
-    font-size: 20px;
-    text-align: center;
+    background-image: url(images/UrbanDaybreak2-1.jpg);
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: 35ch;
+    border-radius: 1rem ;
+    overflow: hidden;
+
+    transition: transform 500ms ease;
+}
+.card3:hover{
+    transform: scale(1.05);
+}
+
+
+.card-content{
+    --padding: 1.5rem;
+    padding: var(--padding);
+    margin-bottom: 0;
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(0 0% 0% / 0.2) 10%,
+        hsl(0 0% 0% / 1)
+    );
+    font-size: 15px;
+}
+.card-title{
     position: relative;
-    top: 50px;
-    display: none;
+    width: max-content;
+   
 }
-
-
-#heading{
-    font-size: 20px;
-    text-align: center;
+.card-title::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    left: calc(var(--padding) * -1);
+    bottom: 0;
+    width: calc(100% + var(--padding));
+    background: #6CD4FF;
+    transform: scale(0);
+    transform-origin: left;
+    transition: transform 500ms ease;
+}
+.card:hover .card-title::after{
+    transform:scale(1);
+}
+.card2:hover .card-title::after{
+    transform:scale(1);
+}
+.card3:hover .card-title::after{
+    transform:scale(1);
+}
+.button{
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
     color: white;
+    background-color: #6CD4FF;
+    padding: 0.5em 1.25em;
+    border-radius: .25em;
 }
-
-img{
-    height: inherit;
-    width: 250px;
+.button:hover, 
+.button:focus{
+    background-color: #D496A7;
 }
