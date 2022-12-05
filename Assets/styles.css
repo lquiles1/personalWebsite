@@ -1,0 +1,97 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(45deg, #F1DEDE,#D496A7,#5D576B,#6CD4FF,#FE938C );
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+   
+@keyframes color{
+    0%{
+        background-position: 0 50% ;
+    }
+    50%{
+        background-position: 100% 50% ;
+    }
+    100%{
+        background-position: 0 50% ;
+    }
+
+}
+
+.nav-list{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 2rem
+    
+   
+}
+
+.nav-item:hover{
+    color: white;
+    font-size: 18px;
+}
+.nav-item:first-child{
+    margin-right: auto;
+    color: white;
+    font-size: 25px;
+    
+}
+.aboutme{
+    font-size: 280%;
+    text-align: center;
+    text-decoration: dotted;
+}
+
+div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+.card{
+    height: 350px;
+    width: 250px;
+    margin: 0.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px
+    
+  
+}
+
+.card h3{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    display: none;
+   
+   
+}
+.card p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    display: none;
+}
+
+
+#heading{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+img{
+    height: inherit;
+    width: 250px;
+}
